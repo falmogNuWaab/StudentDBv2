@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GetToKnowYourClassmates
 {
@@ -63,17 +64,10 @@ namespace GetToKnowYourClassmates
             {
                 Console.WriteLine(pupil.Name);
             }
-            string s = "";
-            string findAndy = List.Find(StudentDB.Contains("Andy"));
-            Console.WriteLine(findAndy);
+
 
         }
-       public static string GetUserInput(string prompt)
-        {
-            Console.Write(prompt);
-            string input = Console.ReadLine();
-            return input;
-        }
+
     }
 }
 
