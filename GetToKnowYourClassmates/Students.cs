@@ -16,5 +16,7 @@ namespace GetToKnowYourClassmates
             this.HomeTown = HomeTown;
             this.FavoriteFood = FavoriteFood;
         }
+
+
     }
 }

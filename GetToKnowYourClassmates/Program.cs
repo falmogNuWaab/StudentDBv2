@@ -45,15 +45,24 @@ namespace GetToKnowYourClassmates
             FavFood.Add("Ebberhart, Cordero", "BBQ");
 
             Console.WriteLine("Welcome to DevBuild7!");
+            Console.WriteLine("");
+
+            List<Students> StudentDB = new List<Students>();
 
             for (int i = 0; i < classmates.Length; i++)
             {
                 string sIndex = classmates[i];
                 Students student = new Students(sIndex, HomeTown[sIndex], FavFood[sIndex]);
                 Console.WriteLine($"Student Name:{student.Name} \nHomeTown:{student.HomeTown} \nFavorite Food: {student.FavoriteFood}");
+                StudentDB.Add(student);          
+
                 Console.WriteLine("");
             }
 
+            foreach(Students pupil in StudentDB)
+            {
+                Console.WriteLine(pupil.Name);
+            }
         }
        
     }
